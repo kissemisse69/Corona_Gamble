@@ -10,7 +10,7 @@ public class product : MonoBehaviour {
     public bool selected;
 
     void Start() {
-        if(Random.Range(0, 5) == 0) corona = true;
+        if(Random.Range(0, 4) == 0) corona = true;
         else corona = false;
     }
 

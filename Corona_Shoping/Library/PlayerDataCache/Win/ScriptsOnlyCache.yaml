@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Basket
     - Master
+    - NightMaster
+    - Player
     - product
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -31,7 +33,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/ChoppingScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -53,25 +55,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11156}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11362}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11518}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 11778}
+    - Class: 114
+      Script: {instanceID: 12186}
+    - Class: 114
+      Script: {instanceID: 12498}
     - Class: 114
       Script: {instanceID: 12696}
     - Class: 114
-      Script: {instanceID: 13078}
+      Script: {instanceID: 13014}
     - Class: 114
-      Script: {instanceID: 15800}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 16100}
-    - Class: 114
-      Script: {instanceID: 24924}
+      Script: {instanceID: 14234}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -81,6 +85,55 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Night.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11152}
+    - Class: 114
+      Script: {instanceID: 11322}
+    - Class: 114
+      Script: {instanceID: 11362}
+    - Class: 114
+      Script: {instanceID: 11778}
+    - Class: 114
+      Script: {instanceID: 12186}
+    - Class: 114
+      Script: {instanceID: 12696}
+    - Class: 114
+      Script: {instanceID: 13080}
+    - Class: 114
+      Script: {instanceID: 16114}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -205,6 +258,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 4ad37ab77afe81d54e68135d9334c3aa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: product
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -375,6 +434,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: f888a01e8f09c2fb51f91114dad22451
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Master
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -439,6 +504,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: f92b3281f03c4283afedcb1dbea0e7f6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Basket
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -513,23 +584,18 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: f888a01e8f09c2fb51f91114dad22451
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Master
+    className: Player
   - hash:
       serializedVersion: 2
-      Hash: 4ad37ab77afe81d54e68135d9334c3aa
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: product
-  - hash:
-      serializedVersion: 2
-      Hash: f92b3281f03c4283afedcb1dbea0e7f6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Basket
+    className: NightMaster
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Game Project/Builds/Dev builds/Corona_Shopping/Corona_Shoping.exe
+  - Assets/Scenes/ChoppingScene.unity
+  - Assets/Scenes/Night.unity
+  playerPath: D:/Game Project/Builds/Dev builds/Corona/Corona_Shoping.exe
